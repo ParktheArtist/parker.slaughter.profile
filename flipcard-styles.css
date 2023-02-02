@@ -1,0 +1,99 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 30px;
+	padding-bottom: 30px;
+    background-image: url("/images/devpagebg.png");
+    background-size: cover;
+    background-position: center;
+    color:white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top: 5px solid #060707;
+    border-bottom: 5px solid #060707;
+    border-left: 5px solid #060707;
+    border-right: 5px solid #060707;
+}
+.card-container {
+    cursor: pointer;
+    height: 150px;
+    perspective: 600;
+    position: relative;
+    width: 150px;
+    align-content: center;
+}
+.card {
+    background-color: #261616;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+    border-top: 5px solid #060707;
+    border-bottom: 5px solid #060707;
+    border-left: 5px solid #060707;
+    border-right: 5px solid #060707;
+    }
+.card:hover {
+    transform: rotateY(180deg);
+}
+.card .side {
+    backface-visibility: hidden;
+    border-radius: 6px;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+}
+.card .back {
+    background: rgba(255, 255, 255, 0.8);;
+    color: rgb(138, 0, 0);
+    line-height: 150px;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+table {
+    width: 50%;
+    margin: 0 auto;
+}
+h1{
+    font-family: 'Permanent Marker', cursive;
+    font-size: x-large;
+    text-align: center;
+    letter-spacing: 2px;
+    color: white;
+    background: #6a3436 center top;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 6em;
+    margin-right: 6em;
+    margin-inline-start: 6em;
+    margin-inline-end: 6em;
+}
+a:link{
+    color: rgb(230, 173, 173);
+}
+a:visited{
+    color: rgb(180, 180, 180);
+}
+a:active, a:hover{
+    color: rgb(138, 0, 0);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+footer{
+    text-align: left;
+}
+p{
+    font-size: large;
+}

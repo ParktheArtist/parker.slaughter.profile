@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Dad Jokes</title>
+        <link rel="icon" type="image/x-image" href="../images/favicon.ico">
+        <link rel="stylesheet" href="../indexstyles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <style>
+        .card-container {
+            cursor: pointer;
+            height: 150px;
+            perspective: 600;
+            position: relative;
+            width: 150px;
+            align-content: center;
+        }
+        .card {
+            background-color: #261616;
+            height: 100%;
+            position: absolute;
+            transform-style: preserve-3d;
+            transition: all 1s ease-in-out;
+            width: 100%;
+            line-height: 50px;
+            text-align: center;
+            border-top: 5px solid #060707;
+            border-bottom: 5px solid #060707;
+            border-left: 5px solid #060707;
+            border-right: 5px solid #060707;
+        }
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+        .card .side {
+            backface-visibility: hidden;
+            border-radius: 6px;
+            height: 100%;
+            position: absolute;
+            overflow: hidden;
+            width: 100%;
+        }
+        .card .back {
+            background: rgba(255, 255, 255, 0.8);;
+            color: rgb(138, 0, 0);
+            line-height: 150px;
+            text-align: center;
+            transform: rotateY(180deg);
+        }
+        table {
+            width: 50%;
+            margin: 0 auto;
+        }
+        </style>
+
+    </head>
+    <body>
+        <h1>Dad Jokes</h1>
+        <p class="crumbs">
+            <a href="../index.html">Home</a> / 
+            <a href="../projects/description.html">Projects</a> / 
+            <a href="#">Dad Jokes</a>
+        </p>
+        <hr>
+        <p>
+            Hover your mouse over each card to see the answer!
+        </p>
+        <table>
+            <tr>
+                <td>
+                <div class="card-container">
+                    <div class="card">
+                    <div class="side">What do you call a laughing jar of Mayonnaise?</div>
+                    <div class="side back">LMayo.</div>
+                    </div>
+                </div>
+                </td>
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="side">What vegetable is kind to everyone?</div>
+                            <div class="side back">A sweet potato.</div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="side">What do you call a factory that makes okay products?</div>
+                            <div class="side back">A satisfactory.</div>
+                        </div>
+                    </div>
+                    </td>
+        </table>
+        <footer>
+                <br>
+                Copyright &copy; 2022 Parker Slaughter
+        </footer>
+    </body>
+</html>

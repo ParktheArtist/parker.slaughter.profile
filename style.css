@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #CCFFEE;
+}
+.site-cont {
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 50px;
+    background-color: aquamarine;
+}
+nav a {
+    padding: 15px;
+    color: indigo;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: cadetblue;
+    color: white;
+    box-shadow: 0 5px indigo;
+}
+.nav-active {
+    background-color: #DCADFF;
+    box-shadow: 0 5px indigo;
+}
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+section {
+    margin: 20px;
+    padding: 10px;
+}
+
+aside {
+    width: 40%;
+    height: 100%;
+    min-width: 90px;
+    margin: 20px 30px 20px 20px;
+    padding: 20px;
+    background-color: cadetblue;
+}
+aside ul {
+    text-indent: 15%;
+    list-style-type: none;
+}
+
+aside li {
+    margin: 5px;
+}
+
+aside ul ul {
+    text-indent: 30%;
+}
+aside a {
+    text-underline-offset: 3px;
+    color: darkblue;
+}
+
+aside a:hover {
+    color: aliceblue;
+    text-decoration-style: dotted;
+}
+.aside-active {
+    text-decoration-style: double;
+    font-weight: bold;
+    color: brown;
+}
+.crumbs {
+    margin: 10px;
+}
+
+.crumbs a {
+    color: #5D0001;
+    text-decoration: none;
+}
+.crumbs a:hover {
+    color: blueviolet;
+}
+@media only screen and (max-width: 880px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-right: 0;
+        background-color: aquamarine;
+}
+
+
+aside {
+    width: 40%;
+    height: 100%;
+    min-width: 90px;
+    margin: 20px 15px 10px 10px;
+    padding: 10px;
+    background-color: cadetblue;
+}
+
+section {
+    margin: 10px;
+    padding: 5px;
+}
+}
+footer{
+    text-align: center;
+}

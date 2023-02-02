@@ -1,0 +1,146 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 30px;
+	padding-bottom: 30px;
+    background-image: url("/images/devpagebg.png");
+    background-size: cover;
+    background-position: center;
+    color:white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top: 5px solid #060707;
+    border-bottom: 5px solid #060707;
+    border-left: 5px solid #060707;
+    border-right: 5px solid #060707;
+}
+
+header{
+    image-orientation: center;
+}
+
+h1{
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    letter-spacing: 2px;
+    color: white;
+    background: #6a3436 center top;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 6em;
+    margin-right: 6em;
+    margin-inline-start: 6em;
+    margin-inline-end: 6em;
+}
+
+.topnav {
+    width: 100%;
+	display: inline-flex;
+	justify-content: center;
+	outline: 5px double black;
+	background-color: black;
+	color: white;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+	padding: 5px 10px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #282828;
+    color: #b4b4b4;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #6a3436;
+    color: white;
+  }
+
+#banner{
+    align-items: center;
+}
+
+#crumbs{
+    margin-left: 1em;
+}
+
+.btn-black {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: 400;
+	font-style: normal;
+	padding: 10px;
+	border: none;
+	background-color: #060707;
+	color: white;
+    margin-bottom: 1em;
+}
+.btn-black:hover {
+	background-color: #282828;
+}
+
+.btn-black:active {
+	background-color: #135c87;
+	color: #b4b4b4;
+}
+
+article{
+    float: right;
+    margin: 5px 30px;
+}
+
+h2, h3{
+    font-family: 'Permanent Marker', cursive;
+    text-decoration: underline;
+    letter-spacing: 2px;
+    color: #060707;
+}
+
+blockquote{
+    margin: 20px;
+    padding: 30px;
+    border: 2px solid #060707;
+    border-radius: 5px;
+}
+        
+dd {
+    font-style: italic;
+}
+
+#intro{
+    text-align: center;
+}
+
+footer{
+    text-align: left;
+}
+
+u{
+    font-variant: small-caps;
+}
+a:link{
+    color: rgb(230, 173, 173);
+}
+a:visited{
+    color: rgb(180, 180, 180);
+}
+a:active, a:hover{
+    color: rgb(138, 0, 0);
+    background-color: rgba(255, 255, 255, 0.8);
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Style Guide</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" type="image/x-image" href="../images/favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        <header>
+            <div class="site-cont">
+                <img src="../images/analogdevbanner.png">
+                <div>
+                    <h1>Style Guide</h1>
+                <e>A page designed to layout the visual development of my site.</e>
+                </div>
+            </div>
+            <nav>
+                <a href="../index.html">Home</a> <a class="active">Style Guide</a> <a href="../projects/description.html">Projects</a>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>My Colors</h2>
+                <div class="palette">
+                    <div id="color01" class="shape"><h3 class="title">Headings and Navigation</h3></div>
+                    <h4>Primary: #6a3436
+                    </h4>
+                    <p>This is primarily used for headings and navigation. This deep maroon can also be used for any bolding or the background colors of buttons.</p>
+                </div>
+                <div class="palette">
+                    <div id="color02" class="shape"><span class="title" style="color: #ffffffcc">Backgrounds</span></div>
+                    <h4>Secondary: #b4b4b4</h4>
+                    <p>The dark grey will mostly be used for backgrounds. Usually, content will be underlaid in white but if text ever needs to be used directly on it, color should be <b>#ffffffcc</b>.</p>
+                </div>
+            <div class="palette">
+                <div class="multi-column" style="justify-content: flex-start">
+                    <div id="color03" class="shape"><span class="title">Accent #1<br>#A29061</span></div>
+                    <div id="color04" class="shape"><span class="title">Accent #2<br>#104B6E</span></div>
+                    <div id="color05" class="shape"><span class="title">Accent #3<br>#060707</span></div>
+                </div>
+                <h4>Accents: #A29061, #104B6E, #060707</h4>
+                <p>Here are the available accent colors. These can be used for side bars or background when the primary and secondary colors won’t work. These can also be used for links, buttons, hover effects, etc.</p>
+            </div>
+            </section><!--Colors END-->
+            <section>
+                <h2>Typography</h2>
+                <table>
+                    <tbody><tr>
+                        <td>
+                            <h3>Headings 1 &amp; 2</h3>
+                            <p>Permanent Marker</p>
+                        </td>
+                        <td class="td-color">
+                            <pre>
+                            h1, h2{
+                                    font-family: 'Permanent Marker', cursive;
+                                    letter-spacing: 2px;
+                                    (h1) color: white;
+                                    (h2) color: #060707;
+                            }
+                            </pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Body Text</h3>
+                            <p>Times New Roman</p>
+                        </td>
+                        <td class="td-color">
+                            <pre>	
+                            body {
+                                    font-family: Georgia, 'Times New Roman', Times, serif;
+                                    font-weight: 400;
+                                    font-style: normal;
+                                    line-height: 30px;
+                                    padding-bottom: 30px;
+                                    background-color: black;
+                                    color: white;
+                            }
+                            </pre>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </section><!--Typography END-->
+            <section class="comps">
+                <h2>Components</h2>
+                <div class="multi-column">
+                    <article class="alternate">
+                        <p>
+                            <a href="#">A Link</a>
+                        </p>
+                    
+                    <pre>
+                a{
+                        text-align: center;
+                }
+    
+                a:hover{
+                        color: rgb(138, 0, 0);
+                        background-color: #ffffffcc;
+                }
+                    </pre>
+                </article><!--Link END-->
+                <article>
+                    <nav>
+                        <a class="active">Nav 01</a> <a>Nav 02</a> <a>Nav 03</a>
+                    </nav>
+                    <pre>
+                nav a {
+                        padding: 5px 10px;
+                        color: white;
+                        text-decoration: none;
+                        transition: 0.5s;
+                }
+                
+                nav a:hover {
+                        background-color: #060707;
+                        color: white;
+                }
+    
+                .active {
+                        font-size: 1.5em;
+                        font-style: italic;
+                }
+            </pre>
+            </article><!--Nav END-->
+            <article class="alternate">
+                    <button type="button" class="btn-blue">Button 01</button>
+                    <button type="button" class="btn-black">Button 02</button>
+                
+                    <pre>
+                .btn-blue {
+                        font-family: Georgia, 'Times New Roman', Times, serif;
+                        font-weight: 400;
+                        font-style: normal;
+                        padding: 10px;
+                        border: none;
+                        background-color: #104B6E;
+                        color: #b4b4b4;
+                        margin-bottom: 1em;
+                    }
+                    
+                .btn-blue:hover {
+                        background-color: #135c87;
+                    }
+                    
+                .btn-blue:active {
+                        background-color: #060707;
+                        color: white;
+                    }
+                    
+                .btn-black {
+                        font-family: Georgia, 'Times New Roman', Times, serif;
+                        font-weight: 400;
+                        font-style: normal;
+                        padding: 10px;
+                        border: none;
+                        background-color: #060707;
+                        color: white;
+                        margin-bottom: 1em;
+                    }
+                .btn-black:hover {
+                        background-color: #282828;
+                    }
+                    
+                .btn-black:active {
+                        background-color: #135c87;
+                        color: #b4b4b4;
+                    }
+                    </pre>
+                </article><!--Nav END-->
+                </div>
+            </section><!--Components END-->
+        </main>
+        <footer>
+            <p>© Parker Slaughter 2022</p>
+        </footer>
+
+    <iframe id="nr-ext-rsicon" style="position: absolute; display: none; width: 50px; height: 50px; z-index: 2147483647; border-style: none; background: transparent;"></iframe>
+    </body>
+</html>

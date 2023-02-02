@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Beautiful CSS Form</title>
+        <link rel="icon" type="image/x-image" href="../images/favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link href="confirmation.html">
+    
+        <style> 
+        @import url(../indexstyles.css);
+
+            input {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 4px solid #261616;
+            border-radius: 4px;
+            }
+            .btn-black{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 4px solid #261616;
+            border-radius: 4px;
+            }
+            body {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-weight: 400;
+                line-height: 20px;
+                background-image: url("/images/devpagebg.png");
+                background-size: cover;
+                background-position: center;
+                color:white;
+                margin-top: 40px;
+                margin-bottom: 40px;
+                margin-left: 40px;
+                margin-right: 40px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            input [type=submit]{
+                background-color:hsl(0, 100%, 27%);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Bake Sale Sign-Up</h1>
+        <p class="crumbs">
+            <a href="../index.html">Home</a> / 
+            <a href="../projects/description.html">Projects</a> / 
+            <a href="#">Form</a>
+        </p>
+        <hr>
+        <form>
+        <fieldset>
+            <legend>
+            <h2>Fill Out Form</h2>
+            </legend>
+
+            <label for="firstname">First Name*</label>
+            <input type="text" id="firstname" name="First Name">
+            <label for="lastname">Last Name*</label>
+            <input type="text" id="lastname" name="Last Name">
+            <label for="email">Email*</label>
+            <input type="text" id="email" name="Email">
+
+            <p>Dietary Requirements</p>
+            <select name="Dietary Requirements" size="1">
+            <option>None</option>
+            <option>Gluten-free</option>
+            <option>Omnivore</option>
+            <option>Vegan</option>
+            </select>
+            <p>Restrictions: <br> </p>
+            <textarea name="restrictions" rows="4" cols="40" maxlength="600" placeholder="Please tell us any restrictions you may have!"></textarea>
+        </fieldset>
+                <button type="submit" class="btn-black" link="confirmation.html">Submit Form</button>
+            
+            
+                Inspired By:
+                <a href="https://www.w3schools.com/css/css_form.asp">W3 Schools</a>
+            <footer>
+                Copyright &copy; 2022 Parker Slaughter
+            </footer>
+        </form>
+    </body>
+</html>
